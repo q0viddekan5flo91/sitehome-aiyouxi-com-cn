@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 产品说明页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f5f5f0;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #2e2e2e;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+            border-bottom: 1px solid #e0ddd8;
+            margin-bottom: 2.5rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: #2a2a2a;
+            margin-bottom: 0.5rem;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            color: #6b6b66;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e3e0db;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.04);
+            padding: 1.8rem 1.8rem 2rem;
+            flex: 1 1 280px;
+            transition: box-shadow 0.2s ease;
+        }
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #33332e;
+            border-left: 3px solid #9a9a8c;
+            padding-left: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #3d3d39;
+            margin-bottom: 0.6rem;
+        }
+        .card ul {
+            padding-left: 1.2rem;
+            list-style: square;
+            color: #4a4a44;
+            font-size: 0.95rem;
+        }
+        .card li {
+            margin-bottom: 0.4rem;
+        }
+        .note-section {
+            background: #fafaf7;
+            border-radius: 14px;
+            border: 1px solid #ddd9d2;
+            padding: 1.8rem 2rem;
+            margin: 2.8rem 0 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+        .note-section h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #3b3b36;
+            margin-bottom: 0.9rem;
+        }
+        .note-section p {
+            font-size: 0.96rem;
+            color: #3d3d38;
+            margin-bottom: 0.6rem;
+        }
+        .faq-mini {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e0ddd6;
+        }
+        .faq-mini details {
+            margin-bottom: 0.8rem;
+            border: 1px solid #e7e4dd;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            background: #fcfcf9;
+        }
+        .faq-mini summary {
+            cursor: pointer;
+            font-weight: 450;
+            color: #3e3e38;
+            padding: 0.25rem 0;
+        }
+        .faq-mini details p {
+            margin: 0.7rem 0 0.3rem;
+            font-size: 0.9rem;
+            color: #4f4f49;
+        }
+        .link-inline {
+            color: #4f6b5c;
+            text-decoration: none;
+            border-bottom: 1px solid #bcc9bf;
+            transition: border-color 0.15s;
+        }
+        .link-inline:hover {
+            border-bottom-color: #2f4d3c;
+            color: #2f4d3c;
+        }
+        .caption {
+            font-size: 0.85rem;
+            color: #7b7b74;
+            text-align: center;
+            margin-top: 2.8rem;
+            border-top: 1px solid #dedbd4;
+            padding-top: 1.8rem;
+        }
+        @media (max-width: 640px) {
+            body { padding: 1.2rem 0.8rem; }
+            .hero h1 { font-size: 2rem; }
+            .card { padding: 1.4rem; }
+            .note-section { padding: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <h1>爱游戏 · 产品说明</h1>
+        <div class="sub">围绕游戏数据、版本对照与延伸内容，整理一份可日常翻阅的参考说明</div>
+    </div>
+
+    <div class="card-grid">
+        <div class="card">
+            <h3>摘要</h3>
+            <p><a href="https://sitehome-aiyouxi.com.cn" class="link-inline">爱游戏</a> 是一个面向游戏爱好者的信息整合平台，主要提供游戏库查询、版本对照以及相关背景资料的浏览。站点内容覆盖不同平台的游戏资料，适合需要快速查阅某一款作品基础信息的场景。页面结构清晰，条目经过分类整理，可以节省反复跳转搜索的时间。</p>
+        </div>
+        <div class="card">
+            <h3>核心特点</h3>
+            <ul>
+                <li>游戏条目覆盖多平台（主机、掌机、PC），支持按名称或系列检索。</li>
+                <li>版本对照表：同一作品在不同平台上的发售日期、语言支持及差异说明。</li>
+                <li>延伸阅读模块：开发背景、系列关联、文化影响等轻度内容。</li>
+                <li>界面以文字信息为主，加载快，没有冗余弹窗或自动播放内容。</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>日常使用场景</h3>
+            <p>当你看到一款陌生的游戏名字，或者想确认某个经典作品的发售年份、制作组，可以把它当作随身参考。对照功能对跨平台玩家尤其有用——比如想知道某款游戏在 Switch 和 PS5 上有什么区别，列表会直接给出客观差异，不需要自己再对比多个页面。</p>
+            <p>另外，如果你在补老游戏或系列作品，延伸阅读能帮你快速了解故事背景和后续作品关系，省去找百科的步骤。</p>
+        </div>
+    </div>
+
+    <div class="note-section">
+        <h2>使用建议与说明</h2>
+        <p>建议将 <a href="https://sitehome-aiyouxi.com.cn" class="link-inline">爱游戏</a> 作为日常查询的其中一个参考点，而不是唯一来源。游戏数据（如发售日期、语言列表、版本信息）可能随官方更新或区域版本变化而调整，对照前最好结合官方商店或新闻确认最新状态。</p>
+        <p>网站内容由社区编辑和资料整理者维护，力求准确，但难免存在滞后或疏漏。如果你发现某一款游戏的信息与实际情况不符，可以参考页面底部来源说明，或自行搜索核实。</p>
+        <p>关于引用和转载：站点中的文字信息允许个人在注明出处的前提下引用。商业使用前建议联系维护方确认授权。不包含任何形式的游戏下载、模拟器文件或付费资源链接，所有页面仅提供信息查阅。</p>
+    </div>
+
+    <div class="faq-mini">
+        <details>
+            <summary>常见问题摘要 —— 数据覆盖范围</summary>
+            <p>目前主要收录 2000 年以后发行的主流平台游戏，包含部分经典重制版本。独立游戏和区域限定作品收录较少，但会逐步补充。如果你有补充需求，可以通过页面反馈渠道提交（目前暂未开放公开编辑）。</p>
+        </details>
+        <details>
+            <summary>常见问题摘要 —— 版本对照怎么看？</summary>
+            <p>在游戏详情页中，表格横向列出平台名称，纵向为项目（发售日、语言、DLC、帧率等）。灰色单元格表示该项目在该平台不适用或数据待补。部分早期作品的帧率或分辨率数据来自社区测试，标记了“近似值”。</p>
+        </details>
+        <details>
+            <summary>常见问题摘要 —— 页面中出现的链接</summary>
+            <p>站外链接会标注来源，多为官方商店、维基或媒体报道。不会跳转到第三方下载站或可疑页面。如果你发现链接失效或指向错误，欢迎通过站内联系页面报告。</p>
+        </details>
+    </div>
+
+    <div class="caption">
+        此页面为产品说明性介绍，内容保持克制的参考风格。具体数据请以 <a href="https://sitehome-aiyouxi.com.cn" class="link-inline">爱游戏</a> 站内信息为准。
+    </div>
+</div>
+</body>
+</html>
