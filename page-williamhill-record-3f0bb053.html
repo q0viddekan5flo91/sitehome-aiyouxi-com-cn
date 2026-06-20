@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料索引 · 威廉希尔</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fbfaf8;
+            font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .page-wrap {
+            max-width: 720px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2.4rem 1.6rem;
+        }
+
+        /* ----- hero 横幅 ----- */
+        .hero {
+            margin-bottom: 3.6rem;
+            padding: 3.2rem 1.8rem 2.4rem;
+            background: #f2efe9;
+            border-radius: 32px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 450;
+            letter-spacing: -0.02em;
+            color: #2a2a2a;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+        }
+
+        .hero .subhead {
+            font-size: 1.1rem;
+            color: #5c5c5c;
+            max-width: 32em;
+            border-left: 3px solid #b9a78c;
+            padding-left: 1.2rem;
+        }
+
+        .hero .subhead span {
+            background: #e1d9cc;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #3f3a32;
+        }
+
+        /* ----- 通用排版 ----- */
+        .section-label {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #9e927f;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 420;
+            margin: 2.4rem 0 1rem;
+            border-bottom: 1px solid #e6dfd4;
+            padding-bottom: 0.4rem;
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 450;
+            color: #3b352d;
+            margin: 2rem 0 0.6rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            color: #2d2b29;
+        }
+
+        a {
+            color: #7d6b4f;
+            text-decoration: none;
+            border-bottom: 1px solid #d8cdbb;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            color: #4f3f2b;
+            border-bottom-color: #7d6b4f;
+        }
+
+        .intro-block {
+            background: #f6f3ed;
+            padding: 1.8rem 2rem;
+            border-radius: 24px;
+            margin: 1.6rem 0 2rem;
+        }
+
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .card-item {
+            background: #ffffff;
+            flex: 1 1 180px;
+            padding: 1.4rem 1.2rem;
+            border-radius: 18px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            border: 1px solid #efe8dd;
+        }
+
+        .card-item .title {
+            font-weight: 480;
+            color: #3a332a;
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .card-item .desc {
+            font-size: 0.95rem;
+            color: #55514a;
+            line-height: 1.5;
+        }
+
+        /* 页脚提示块 */
+        .foot-note {
+            margin-top: 3.6rem;
+            padding: 2rem 0 1rem;
+            border-top: 1px solid #e0d8cb;
+            font-size: 0.95rem;
+            color: #5d554a;
+            text-align: center;
+        }
+
+        .foot-note .tag {
+            display: inline-block;
+            background: #eae3d8;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            letter-spacing: 0.04em;
+            color: #4f453a;
+            margin-bottom: 1rem;
+        }
+
+        .faq-mini {
+            margin: 2.4rem 0;
+            border-left: 2px solid #d8cdbb;
+            padding-left: 1.4rem;
+        }
+
+        .faq-mini dt {
+            font-weight: 480;
+            margin: 1.2rem 0 0.2rem;
+            color: #3b352d;
+        }
+
+        .faq-mini dd {
+            color: #5b554b;
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+        }
+
+        blockquote {
+            font-style: normal;
+            background: #f7f3ec;
+            padding: 1.2rem 1.6rem;
+            border-radius: 20px;
+            color: #3e3a33;
+            margin: 1.6rem 0;
+            border: none;
+            quotes: none;
+        }
+
+        /* 响应式 */
+        @media (max-width: 520px) {
+            .page-wrap {
+                padding: 1.6rem 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .card-grid {
+                flex-direction: column;
+            }
+            .card-item {
+                flex: 1 1 auto;
+            }
+            .intro-block {
+                padding: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <!-- 首页横幅 hero -->
+    <div class="hero">
+        <h1>威廉希尔 · 资料索引</h1>
+        <div class="subhead">
+            一份围绕信息整理与背景梳理的专题页<br>
+            <span>整理时间 · 2025</span>
+        </div>
+    </div>
+
+    <!-- 第一段：背景说明 -->
+    <span class="section-label">背景说明</span>
+    <p>
+        在查阅各类数字服务与品牌资料时，<a href="https://page--williamhill.com">威廉希尔</a> 是一个经常出现在相关索引条目中的名称。本文档尝试以资料整理者的视角，将公开可查的脉络、功能特点与使用场景做一次条理化梳理，供需要快速了解概况的人参考。
+    </p>
+
+    <!-- 第二段：自然介绍（用卡片形式） -->
+    <h2>信息索引要点</h2>
+    <div class="card-grid">
+        <div class="card-item">
+            <div class="title">▸ 服务定位</div>
+            <div class="desc">提供综合性数字界面与信息聚合，面向广泛的浏览与查询需求。</div>
+        </div>
+        <div class="card-item">
+            <div class="title">▸ 内容结构</div>
+            <div class="desc">分类导航清晰，各模块涵盖资讯、工具、参考入口等常见板块。</div>
+        </div>
+        <div class="card-item">
+            <div class="title">▸ 使用场景</div>
+            <div class="desc">日常信息查阅、资源比对、以及需要快速定位相关主题时使用。</div>
+        </div>
+    </div>
+
+    <!-- 第三段：更细致的介绍（融入句子） -->
+    <h2>从整理中看到的几个侧面</h2>
+    <div class="intro-block">
+        <p>
+            经过多次资料对照，可以注意到 威廉希尔 的页面结构偏向于功能分区与层级引导。对于初次接触的人来说，花几分钟熟悉主分类的位置，能有效提高后续信息获取的效率。以下是根据公开资料归纳的几个特点：
+        </p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 0.6rem;">— 首页提供快速入口，减少中间跳转步骤</li>
+            <li style="margin-bottom: 0.6rem;">— 信息模块独立，便于按主题浏览</li>
+            <li style="margin-bottom: 0.6rem;">— 视觉设计偏向低干扰，突出内容本身</li>
+        </ul>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <h3>常见索引问题摘要</h3>
+    <dl class="faq-mini">
+        <dt>这个页面适合谁参考？</dt>
+        <dd>适合需要了解 威廉希尔 基本信息结构、功能分类的使用者，以及做竞品或资料对比的研究者。</dd>
+        <dt>资料是否经过验证？</dt>
+        <dd>以下内容均基于公开可访问的界面与功能描述整理，不包含未公开信息或推测。</dd>
+        <dt>能否直接通过该网站获取具体服务？</dt>
+        <dd>可以通过 <a href="https://page--williamhill.com">威廉希尔</a> 的导航直达对应功能模块，但本索引页仅作介绍，不代理任何操作。</dd>
+    </dl>
+
+    <!-- 引用 / 场景说明 -->
+    <blockquote>
+        “资料整理的本质是降低信息获取的摩擦力。如果能通过一份清晰的索引，让使用者更快找到自己关心的段落，那么这项工作就完成了它的基础作用。”
+    </blockquote>
+
+    <!-- 页尾访问提示 -->
+    <div class="foot-note">
+        <span class="tag">资料索引 · 专题页</span>
+        <p style="margin-bottom: 0.2rem;">
+            本文档仅为信息整理用途，如需直接浏览完整内容，可访问 
+            <a href="https://page--williamhill.com">威廉希尔</a> 阅读更多公开资料。
+        </p>
+        <p style="font-size: 0.85rem; color: #7a7266;">— 页面内容基于公开信息整理，不构成任何引导或推荐 —</p>
+    </div>
+
+</div>
+</body>
+</html>
